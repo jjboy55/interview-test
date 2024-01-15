@@ -1,19 +1,29 @@
+@font-face {
+    font-family: 'Jet Brains Mono';
+    src: url(Fonts/JetBrainsMono-VariableFont_wght.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
+body{
+    font-family: 'Jet Brains Mono';
+}
 
 .wrapper{
     background-color: #0B0A07;
-    background: radial-gradient(#FF7F11 8%, transparent 8%),#0B0A07;
+    /* background: radial-gradient(#FF7F11 8%, transparent 8%),#0B0A07;
     background-position: 0 0, 26px 26px;
-    background-size: 26px 26px;
+    background-size: 26px 26px; */
     width: 100%;
     min-height: 100vh;
     height: 100%;
-    font:normal 18px/26px monospace;
+    font-size: 18px;
+    line-height: 26px;
     color: white;
+    font-style: normal;
     padding: 100px 20px 200px;
     box-sizing: border-box;
 }
@@ -30,8 +40,12 @@
     left: 50%;
     margin-top: 90px;
 }
+
 .title{
-    font: bold 42px/52px monospace;
+    font-weight: bold;
+    font-family: 'Jet Brains Mono';
+    font-size: 42px;
+    line-height: 52px;
     text-align: center;
     padding: 20px;
     transition: all 0.8s ease-in-out;
