@@ -3,12 +3,18 @@
     src: url(Fonts/JetBrainsMono-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family: 'Poppins';
+    src: url(Fonts/poppins/Poppins-Bold.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
+    background-color: #0B0A07;
     font-family: 'Jet Brains Mono';
 }
 
@@ -26,6 +32,7 @@ body{
     font-style: normal;
     padding: 100px 20px 200px;
     box-sizing: border-box;
+    text-align: center;
 }
 .block{
     z-index: 1;
@@ -83,4 +90,10 @@ body{
 
 .each-event:nth-child(even)::before{
     left: calc(100% + 14px);
+}
+.my-work-experience{
+    font-family: 'Poppins';
+    font-size: 70px;
+    margin-bottom: 50px;
+    
 }
