@@ -3,9 +3,6 @@
     padding: 0;
 }
 
-body{
-    overflow: hidden;
-}
 
 .wrapper{
     background-color: #0B0A07;
@@ -37,7 +34,7 @@ body{
     font: bold 42px/52px monospace;
     text-align: center;
     padding: 20px;
-    transition: all 0.8 ease-in-out;
+    transition: all 0.8s ease-in-out;
 }
 
 .each-event{
@@ -48,4 +45,24 @@ body{
     position: relative;
     border-radius: 8px;
     box-sizing: border-box;
+    transition: all 0.3s ease-in-out ;
+}
+.each-event::before{
+    content: "";
+    position: absolute;
+    top: calc(50% - 8px);
+    left: -27px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 4px 20px -4px rgba(64, 64, 64, 0,8);
+}
+
+.each-event:nth-child(odd){
+    margin-left: calc(50% + 20px);
+}
+
+.each-event:nth-child(even){
+    margin-left: calc(50% - 372px);
 }
