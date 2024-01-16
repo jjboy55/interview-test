@@ -123,6 +123,43 @@ html{
     }
     
 }
+@media (max-width:425px) {
+    .wrapper2 .center-line,
+    .row2 section::before,
+    .row3 section::before,
+    .row1 section::before{
+        display: none;
+    }
+    .wrapper2 .row{
+        margin: 10px 0;
+    }
+    .jeremiah{
+        font-size: 28px;
+    }
+    .row section .details .title{
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .paragraph{
+        font-size: 12px;
+    }
+    .title2{
+        font-size: 12px;
+        font-weight: 100;
+    }
+    .skillswrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(161px,1fr) );
+        gap:50px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(161px, 1fr));
+        gap: 16px;
+
+    }
+}
 @media (max-width:375px) {
     .wrapper2 .center-line,
     .row2 section::before,
