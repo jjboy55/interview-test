@@ -22,19 +22,130 @@ body{
     font-family: 'Jet Brains Mono';
 }
 
-.wrapper{
+/* .wrapper{
     background-color: #0B0A07;
-    width: 100%;
+    min-width: 1080px;
     min-height: 100vh;
     height: 100%;
     font-size: 18px;
     line-height: 26px;
     color: white;
     font-style: normal;
-    padding: 0 20px 200px;
     box-sizing: border-box;
     text-align: center;
+} */
+
+
+.wrapper2{
+    max-width: 1080px;
+    margin: 50px auto;
+    padding: 0 20px;
 }
+.wrapper2 .center-line{
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: white;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wrapper2 .row{
+    display:flex;
+}
+.wrapper2 .row1{
+    justify-content: flex-start;
+}
+.wrapper2 .row2{
+    justify-content: flex-end;
+}
+.wrapper2 .row3{
+    justify-content: flex-start;
+}
+
+.wrapper2 .row section{
+    background: white;
+    outline: solid #0B0A07;
+    width: calc(50% - 40px);
+    padding: 10px;
+}
+.row section .details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row section .details .title{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.row section p{
+    margin: 10px 0 17px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .block{
     z-index: 1;
     position: relative;
@@ -66,7 +177,7 @@ body{
     from{width:0}
 }
 
-.each-event{
+ .each-event{
     outline: solid white;
     border-width: 5px;
     padding: 15px;
@@ -75,7 +186,7 @@ body{
     position: relative;
     box-sizing: border-box;
     transition: all 0.3s ease-in-out ;
-}
+    }
 .each-event::before{
     content: "";
     position: absolute;
@@ -100,23 +211,31 @@ body{
 }
 .my-work-experience{
     font-family: 'Poppins-Regular';
-    font-size: 50px;
-    padding: 90px;
-    
+    text-align: center;
+    padding: 50px;
+}
+@media screen and (max-width: 414px) {
+    .my-work-experience{
+        font-family: 'Poppins-Regular';
+    text-align: center;
+    padding: 50px;
+    line-height: 40px;
+    }
 }
 
 .herosection{
     position: relative;
     max-width: 100%;
-    min-height: 600px;
+    min-height: 70px;
     background-color: white;
     font-family: 'Poppins-Regular';
-    font-size: 50px;
     color: #0B0A07;
     text-align: center;
+
 }
 
 .text{
+    font-size: 50px;
     border-right: 2px solid;
     width: 100%;
     white-space: nowrap;
@@ -134,8 +253,16 @@ body{
     background-color: white;
     padding: 60px 80px;
     color: #0B0A07;
-    
-
+}
+.skillsText{
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+@media screen and (max-width: 414px) {
+    .skillsText{
+        margin-bottom: 40px;
+        font-size: 2em;
+    }
 }
 .skillswrapper{
     display: grid;
@@ -143,10 +270,7 @@ body{
     gap:50px;
      
 }
-.skillsText{
-    margin-bottom: 40px;
-    font-size: 50px;
-}
+
 
 .container{
     outline: solid; 
@@ -157,6 +281,11 @@ body{
     margin-bottom: 30px;
 }
 .jeremiah{
-    position: absolute;
-    top: 25%;
+    padding: 20px;
+
+}
+@media screen and (max-width:414px) {
+    .jeremiah{
+        padding: 20px;
+    }
 }
