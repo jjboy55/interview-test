@@ -121,6 +121,7 @@ html{
     .jeremiah{
         font-size: 28px;
     }
+    
 }
 @media (max-width:414px) {
     .wrapper2 .center-line,
@@ -134,6 +135,10 @@ html{
     }
     .jeremiah{
         font-size: 28px;
+    }
+    .row section .details .title{
+        font-size: 18px;
+        font-weight: 600;
     }
 }
 
@@ -223,12 +228,6 @@ html{
     text-align: center;
 }
 
-@keyframes cursor {
-    50% {border-color: transparent}
-}
-@keyframes typing {
-    from{width:0}
-}
 
 .my-work-experience{
     font-family: 'Poppins-Regular';
@@ -392,6 +391,38 @@ html{
 }
 
 
+footer {
+    background-color: white;
+    color: #0B0A07;
+    text-align: center;
+    padding: 20px;
+}
 
-  
-  
+.social-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-links img {
+    width: 30px; /* Adjust the size of the icons as needed */
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.social-links a:hover {
+    color: #0B0A07; /* Change the color to match your preferred link hover color */
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 14px;
+}
