@@ -123,7 +123,7 @@ html{
     }
     
 }
-@media (max-width:414px) {
+@media (max-width:375px) {
     .wrapper2 .center-line,
     .row2 section::before,
     .row3 section::before,
@@ -137,8 +137,50 @@ html{
         font-size: 28px;
     }
     .row section .details .title{
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 600;
+    }
+    .title2{
+        font-size: 15px;
+        font-weight: 100;
+    }
+}
+
+@media (max-width:320px) {
+    .wrapper2 .center-line,
+    .row2 section::before,
+    .row3 section::before,
+    .row1 section::before{
+        display: none;
+    }
+    .wrapper2 .row{
+        margin: 10px 0;
+    }
+    .jeremiah{
+        font-size: 28px;
+    }
+    .row section .details .title{
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .paragraph{
+        font-size: 12px;
+    }
+    .title2{
+        font-size: 12px;
+        font-weight: 100;
+    }
+    .skillswrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(161px,1fr) );
+        gap:50px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(161px, 1fr));
+        gap: 16px;
+
     }
 }
 
@@ -235,7 +277,7 @@ html{
     color: white;
     padding: 50px;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 375px) {
     .my-work-experience{
         font-family: 'Poppins-Regular';
     text-align: center;
@@ -273,7 +315,7 @@ html{
     margin-top: 80px;
     font-family: 'Poppins-Regular';
     background-color: white;
-    padding: 60px 80px;
+    padding: 60px 60px;
     color: #0B0A07;
     text-align: center;
 
@@ -282,7 +324,7 @@ html{
     margin-bottom: 40px;
     font-size: 2em;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 375px) {
     .skillsText{
         margin-bottom: 40px;
         font-size: 2em;
@@ -292,8 +334,9 @@ html{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(186px,1fr) );
     gap:50px;
-     
 }
+
+
 
 
 .container{
@@ -365,7 +408,6 @@ html{
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 16px;
     padding: 16px;
-    margin: 0 80px;
 }
 
 .grid-item {
