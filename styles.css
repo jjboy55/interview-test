@@ -21,25 +21,15 @@ body{
     background-color: #0B0A07;
     font-family: 'Jet Brains Mono';
 }
-
-/* .wrapper{
-    background-color: #0B0A07;
-    min-width: 1080px;
-    min-height: 100vh;
-    height: 100%;
-    font-size: 18px;
-    line-height: 26px;
-    color: white;
-    font-style: normal;
-    box-sizing: border-box;
-    text-align: center;
-} */
-
+html{
+    scroll-behavior: smooth;
+}
 
 .wrapper2{
     max-width: 1080px;
-    margin: 50px auto;
+    margin: 0px auto;
     padding: 0 20px;
+
 }
 .wrapper2 .center-line{
     position: absolute;
@@ -48,6 +38,7 @@ body{
     background: white;
     left: 50%;
     transform: translateX(-50%);
+    z-index: -1;
 }
 
 .wrapper2 .row{
@@ -68,7 +59,31 @@ body{
     outline: solid #0B0A07;
     width: calc(50% - 40px);
     padding: 10px;
+    position: relative;
 }
+.wrapper2 .row section::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width:15px;
+    background: white;
+    top: 28px;
+    transform: rotate(45deg);
+
+}
+
+
+.row1 section::before{
+    right: -7px;
+    }
+.row2 section::before{
+    left: -7px;
+    }
+
+.row3 section::before{
+    right: -7px;
+    }
+
 .row section .details{
     display: flex;
     justify-content: space-between;
@@ -82,6 +97,38 @@ body{
 
 .row section p{
     margin: 10px 0 17px 0;
+}
+
+@media (max-width:772px) {
+    .wrapper2 .center-line{
+        left: 30px;
+    }
+    .wrapper2 .row{
+        margin: 30px 0 3px 60px;
+    }
+    .wrapper2 .row section{
+        width: 100%;
+    }
+    .row2 section::before{
+        left: -7px;
+    }
+    .row3 section::before{
+        left: -7px;
+    }
+    .row1 section::before{
+            left: -7px;
+    }
+}
+@media (max-width:414px) {
+    .wrapper2 .center-line,
+    .row2 section::before,
+    .row3 section::before,
+    .row1 section::before{
+        display: none;
+    }
+    .wrapper2 .row{
+        margin: 10px 0;
+    }
 }
 
 
@@ -177,41 +224,10 @@ body{
     from{width:0}
 }
 
- .each-event{
-    outline: solid white;
-    border-width: 5px;
-    padding: 15px;
-    margin: 60px 50px;
-    max-width:350px;
-    position: relative;
-    box-sizing: border-box;
-    transition: all 0.3s ease-in-out ;
-    }
-.each-event::before{
-    content: "";
-    position: absolute;
-    top: calc(50% - 8px);
-    left: -27px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: white;
-}
-
-.each-event:nth-child(odd){
-    margin-left: calc(50% + 20px);
-}
-
-.each-event:nth-child(even){
-    margin-left: calc(50% - 368px);
-}
-
-.each-event:nth-child(even)::before{
-    left: calc(100% + 11px);
-}
 .my-work-experience{
     font-family: 'Poppins-Regular';
     text-align: center;
+    color: white;
     padding: 50px;
 }
 @media screen and (max-width: 414px) {
@@ -249,10 +265,13 @@ body{
 }
 
 .myskillsdiv{
+    margin-top: 50px;
     font-family: 'Poppins-Regular';
     background-color: white;
     padding: 60px 80px;
     color: #0B0A07;
+    text-align: center;
+
 }
 .skillsText{
     margin-bottom: 40px;
