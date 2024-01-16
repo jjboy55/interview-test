@@ -416,6 +416,7 @@ footer {
     width: 30px; /* Adjust the size of the icons as needed */
     height: 30px;
     margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 .social-links a:hover {
