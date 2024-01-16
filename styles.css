@@ -425,7 +425,6 @@ html{
     width: 80%; /* Adjust the width as needed */
     max-width: 414px; /* Set a maximum width */
     height: auto;
-    border-radius: 50%;
     vertical-align: middle;
     outline: solid #0B0A07 1px;
   }
