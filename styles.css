@@ -505,3 +505,8 @@ footer {
     margin-top: 10px;
     font-size: 14px;
 }
+.paragraph,
+.aboutme,
+.title2{
+    font-weight: 200;
+}
